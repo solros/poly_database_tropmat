@@ -26,7 +26,20 @@ CREDIT poly_database_tropmat
 # Contained in extension ''poly_database_tropmat''.
 # @param String id
 # @return TropicalOrientedMatroid
-user_function poly_db_tom54_id {
+user_function poly_db_tom_id {
 	my $id = shift;
 	return poly_db('Tropical', 'TOM', {'_id' => $id})->[0];
+}
+
+
+# @category Database
+# Returns the tropical oriented matroids in the database of a given rank //r//.
+# Equivalent to [[poly_db]]('Tropical', 'TOM', {'RANK' => //r//}).
+# 
+# Contained in extension ''poly_database_tropmat''.
+# @param Int r
+# @return Array<TropicalOrientedMatroid>
+user_function poly_db_tom_rank {
+	my $d = shift;
+	return poly_db('Tropical', 'TOM', {'RANK' => $d});
 }

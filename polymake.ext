@@ -1,4 +1,4 @@
-URI file:///Volumes/Polaris/poly_database_tropmat
+URI http://solros.de/polymake/poly_database_tropmat#1.0
 
 
 # CREDIT poly_database_tropmat
@@ -6,7 +6,7 @@ URI file:///Volumes/Polaris/poly_database_tropmat
 #  copyright your name, address, etc.
 
 
- REQUIRE
+REQUIRE
    URI http://solros.de/polymake/poly_database#1.0
    URI http://solros.de/polymake/tropmat#1.0
 
